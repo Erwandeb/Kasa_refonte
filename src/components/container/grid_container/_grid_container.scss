@@ -1,0 +1,23 @@
+
+.logement-list{
+    display: flex;
+ /*    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 5%;
+    row-gap: 30px;
+    justify-self: stretch;
+    height: 100%; */
+    flex-wrap: wrap;
+    margin: 30px;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:426px){
+    .logement-list{
+        margin-top: 10px;
+        display: flex;
+        width: 95%;
+        flex-direction: column;
+    }
+}

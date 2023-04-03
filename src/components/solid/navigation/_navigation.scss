@@ -1,0 +1,60 @@
+.navigation{
+    display: flex;
+    align-items: center;
+    line-height: 22px;
+}
+.navigation a {
+    margin: 0 25px;
+    color: $main-color;
+    line-height: 22px;
+    position: relative;
+}
+
+.navigation a {
+    position: relative;
+}
+.navigation a::before {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 0%;
+    bottom: 0;
+    background-color: $main-color;
+ }
+ .navigation a.active::before {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    background-color: $main-color;
+    animation-name: big;
+    animation-duration: 0.250s;
+    animation-fill-mode:forwards;
+ }
+
+ @keyframes big{
+    from{
+        width: 0%;
+    } 
+    to{
+        width: 100%;
+    }
+ }
+
+
+
+
+@media screen and (max-width:426px){
+    .navigation{
+      height: 50px;
+      align-items: center;
+      margin-top: 15px;
+        a {
+        margin: 1%;
+        height: 34px;
+        width: 75px;
+        font-size: 12px;
+        }
+    }
+}
