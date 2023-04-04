@@ -14,20 +14,13 @@ import backgroundHome from '../../public/media/IMG.png';
 
 function Home() {
 
-  const [background, setBackground] = useState(null);
-  const photobackground = backgroundHome;
+  const [background, setBackground] = useState(backgroundHome);
 
-
-  useEffect(() => {
-    setBackground(photobackground);
-  }, []);
-
-  
   return (
     <div className="home">
      <Header/>
       <div className='wrapper'>
-        <Background photo={photobackground} baseline={"Chez vous, partout et ailleurs"}/>
+        <Background photo={background} baseline={"Chez vous, partout et ailleurs"}/>
         <Grid_container/> 
       </div>
       <Footer />

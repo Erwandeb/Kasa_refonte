@@ -24,35 +24,15 @@
 }
 
 
-@media screen and (max-width:426px){
+@media screen and (max-width:600px){
     .background-home{
         height: 110px ;
         margin-bottom: 20px;
         .slogan-home{
-            top: 40%;
-            left: 9%;
-            width: 185px ;
-            display: flex;
-            justify-content: center;
-            text-align: start;
-            align-items: flex-start;
-            position: absolute;
-            p{
-                font-size:larger;
-            }
+            width: 80% ;
+            text-align: left;
+            font-size:24px;
         }
     }
 
-    .img-window-home{
-        width: 100%;
-        position: relative;
-        img{
-            margin-top: 4%;
-            margin-bottom: 4%;
-         
-            width: 96%;
-            height: 100px;
-         
-        }
-    }
 }

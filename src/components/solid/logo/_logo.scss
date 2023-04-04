@@ -2,12 +2,13 @@
   
 }
 
-@media screen and (max-width:426px){
+@media screen and (max-width:600px){
     .logo{
-        margin-left: 10px;
+        margin-left: 0px;
         a{
             img{
-                margin-left: 20px;
+                height: 47px;
+                margin-left: 0px;
             }
         }
     }

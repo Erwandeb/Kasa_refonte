@@ -12,11 +12,11 @@ const Logement_dropdown_container = ({ logementData }) => {
     <div className="wrapper-logement-details">
       <div className="wrapper-container">
         <Accordeon
-          title={"Description"}
+          titre={"Description"}
           description={logementData.description}
         />
         <Accordeon
-          title={"Equipements"}
+          titre={"Equipements"}
           description={logementData.equipments.map((item) => <li key={item}>{item}</li>)}
         />
       </div>

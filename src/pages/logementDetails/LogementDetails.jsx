@@ -1,5 +1,6 @@
 // Libraires
 import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate  } from "react-router-dom"
 
 // Composants
 import Header from '../../components/container/header_container/header_container';
@@ -12,40 +13,23 @@ import Footer from '../../components/solid/footer/Footer';
 import { getData } from '../../api';
 
 
-
-
-
-
 function LogementDetails(props) {
 
-  const [logementData, setLogementData] = useState({});
+  const [logementData, setLogementData] = useState(null);
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
-  const { id } = props.match.params;
+  const { id } = useParams();
+  const navigate = useNavigate();
 
-  console.log(id)
-
-    useEffect(() => {
-    const { id } = props.match.params;
-    fetch(process.env.PUBLIC_URL + '/annonces.json')
-      .then(res => res.json())
-      .then(
-        (result) => {
-          setIsLoaded(true);
-          setLogementData(result.find((annonce) => annonce.id === id));
-        },
-        (error) => {
-          setIsLoaded(true);
-          setError(error);
-        }
-      );
-  }, [props.match.params]);
- 
   const fetchingData = async () => {
     try {
       const response = await getData();
       const result = response.data;
       setLogementData(result.find((annonce) => annonce.id === id));
+
+      if(result.find((annonce) => annonce.id === id) === undefined ){
+        navigate("/404");
+      }
     } catch (err) {
       console.log(err.response || err.message);
       setError(error);
@@ -55,8 +39,9 @@ function LogementDetails(props) {
   };
   
   useEffect(() => {
+    window.scrollTo(0, 0)
     fetchingData();
-  }, [props.match.params]);
+  }, [id]);
 
 
   if (error) {
@@ -68,9 +53,11 @@ function LogementDetails(props) {
   return (
     <div className="home">
       <Header />
-      <Slider logementData={logementData.photos} />
-      <Infos_logement_container logementData={logementData} />
-      <Logement_dropdown_container logementData={logementData}/>
+      <div className='wrapper'>
+        <Slider logementData={logementData} />
+        <Infos_logement_container logementData={logementData} />
+        <Logement_dropdown_container logementData={logementData}/>
+      </div>
       <Footer />
     </div>
   );

@@ -13,11 +13,10 @@
 }
 
 
-@media screen and (max-width:426px){
+@media screen and (max-width:600px){
     .logement-list{
-        margin-top: 10px;
         display: flex;
-        width: 95%;
         flex-direction: column;
+        margin: 10px 0px;
     }
 }
