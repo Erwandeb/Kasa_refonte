@@ -2,10 +2,10 @@
 import React from 'react';
 
 // Composants
-import Header from '../../components/container/header_container/header_container';
-import Background from '../../components/fonctionnel/background/Background';
-import About_dropdown_container from '../../components/container/about_dropdown_container/AboutDropdown_container';
-import Footer from '../../components/solid/footer/Footer';
+import Header from '../../layout/headerContainer/headerContainer';
+import Background from '../../components/background/Background';
+import AboutDropdownContainer from '../../layout/AboutDropdownContainer/AboutDropdownContainer';
+import Footer from '../../components/footer/Footer';
 
 
 // Fonction, images, variables, etc...
@@ -24,7 +24,7 @@ function About() {
       <Header />
       <div className='wrapper'>
         <Background photo={photobackground} baseline={""}/>
-        <About_dropdown_container/>
+        <AboutDropdownContainer/>
       </div>
       <Footer />
     </div>

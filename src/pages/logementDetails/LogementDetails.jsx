@@ -3,11 +3,11 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate  } from "react-router-dom"
 
 // Composants
-import Header from '../../components/container/header_container/header_container';
-import Slider from '../../components/fonctionnel/slider/Slider';
-import Logement_dropdown_container from '../../components/container/logement_dropdown_container/LogementDropdown_container';
-import Infos_logement_container from '../../components/container/infos_logement_container/Infos_logment_container';
-import Footer from '../../components/solid/footer/Footer';
+import Header from '../../layout/headerContainer/headerContainer';
+import Slider from '../../components/slider/Slider';
+import InfosLogementContainer from '../../layout/infosLogementContainer/InfosLogmentContainer';
+import LogementDropdownContainer from '../../layout/logementDropdownContainer/LogementDropdownContainer';
+import Footer from '../../components/footer/Footer';
 
 // Fonction, images, variables, etc...
 import { getData } from '../../api';
@@ -55,8 +55,8 @@ function LogementDetails(props) {
       <Header />
       <div className='wrapper'>
         <Slider logementData={logementData} />
-        <Infos_logement_container logementData={logementData} />
-        <Logement_dropdown_container logementData={logementData}/>
+        <InfosLogementContainer logementData={logementData} />
+        <LogementDropdownContainer logementData={logementData}/>
       </div>
       <Footer />
     </div>

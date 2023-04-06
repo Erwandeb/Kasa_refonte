@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Accordeon from '../../fonctionnel/accordeon/Accordeon';
+import Accordeon from '../../components/accordeon/Accordeon';
 
 const Logement_dropdown_container = ({ logementData }) => {
   const [isLoaded, setIsLoaded] = useState(false);

@@ -3,15 +3,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Composants
-import Logo from '../../components/solid/logo/logo';
-import Navigation from '../../components/solid/navigation/Navigation'
-import Footer from '../../components/solid/footer/Footer';
-import Header from '../../components/container/header_container/header_container';
+import Footer from '../../components/footer/Footer';
+import Header from '../../layout/headerContainer/headerContainer';
 
 // Fonction, images, variables, etc...
-
-
-
 
 
 function NotFound() {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import flecheLeft from '../../../public/media/fleche-left.png';
-import flecheRight from '../../../public/media/fleche-right.png';
+import flecheLeft from '../../public/media/fleche-left.png';
+import flecheRight from '../../public/media/fleche-right.png';
 
 const Slider = ({ logementData }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(1);

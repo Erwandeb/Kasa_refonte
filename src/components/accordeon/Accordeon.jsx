@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import arrow from '../../../public/media/Arrow.png';
+import arrow from '../../public/media/Arrow.png';
 
 function Accordeon({titre, description}) {
   const [isOpened, setIsOpened] = useState(false);

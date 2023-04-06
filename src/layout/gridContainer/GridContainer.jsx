@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import Card from '../../fonctionnel/card/Card';
-import { getData } from '../../../api';
+import Card from '../../components/card/Card';
+import { getData } from '../../api';
 
 
 function Grid_container() {

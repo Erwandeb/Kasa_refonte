@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Accordeon from '../../fonctionnel/accordeon/Accordeon';
+import Accordeon from '../../components/accordeon/Accordeon';
 
 function About_dropdown_container() {
 

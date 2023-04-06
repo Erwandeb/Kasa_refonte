@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../../../public/media/logo_kasa.svg';
+import logo from '../../public/media/logo_kasa.svg';
 
 const Logo = () => {
     return(

@@ -1,5 +1,5 @@
 import React from 'react';
-import StarRating from '../../fonctionnel/starRating/StarRating';
+import StarRating from '../../components/starRating/StarRating';
 
 const Infos_logement_container = ({logementData}) => {
 

@@ -2,10 +2,10 @@
 import React, { useState, useEffect } from 'react';
 
 // Composants
-import Header from '../../components/container/header_container/header_container';
-import Background from '../../components/fonctionnel/background/Background';
-import Grid_container from '../../components/container/grid_container/Grid_container';
-import Footer from '../../components/solid/footer/Footer';
+import Header from '../../layout/headerContainer/headerContainer';
+import Background from '../../components/background/Background';
+import GridContainer from '../../layout/gridContainer/GridContainer';
+import Footer from '../../components/footer/Footer';
 
 // Fonction, images, variables, etc...
 import backgroundHome from '../../public/media/IMG.png';
@@ -21,7 +21,7 @@ function Home() {
      <Header/>
       <div className='wrapper'>
         <Background photo={background} baseline={"Chez vous, partout et ailleurs"}/>
-        <Grid_container/> 
+        <GridContainer/> 
       </div>
       <Footer />
     </div>
