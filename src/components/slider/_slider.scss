@@ -13,9 +13,11 @@
         overflow: hidden;
         border-radius: 25px;
         .slider-derouler{
-            transition: translate .5s linear;
+            //transition: translate .5s linear;
             display: flex;
             width: 100%;
+            transition: transform 0.5s ease-in-out;
+            will-change: transform;
             .imageSlider{
                 height: 415px;
                 border-radius: 25px;
