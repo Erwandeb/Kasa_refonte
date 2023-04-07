@@ -59,6 +59,14 @@
     }
 }
 
+@media screen and (max-width: 600px){
+    .navigation{
+        a {
+        height: 25px;
+        margin:  15px 1%;
+        }
+    }
+}
 
 
 @media screen and (max-width:450px){

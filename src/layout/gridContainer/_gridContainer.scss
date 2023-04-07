@@ -1,15 +1,13 @@
 
 .logement-list{
     display: flex;
- /*    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    column-gap: 5%;
-    row-gap: 30px;
-    justify-self: stretch;
-    height: 100%; */
+    background-color: #F6F6F6;
     flex-wrap: wrap;
-    margin: 30px;
     justify-content: center;
+    border-radius: 25px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding-top: 25px;
 }
 
 
@@ -18,5 +16,8 @@
         display: flex;
         flex-direction: column;
         margin: 10px 0px;
+        align-items: center;
+        padding-top: 0px;
+        background-color: #ffffff;
     }
 }
