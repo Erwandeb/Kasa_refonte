@@ -23,7 +23,6 @@ const Slider = ({ logementData }) => {
 
     const length = logementData.pictures.length;
 
-    // Affichage des photos
     let showImages;
     if (logementData) {
         showImages = logementData.pictures.map((photo) => {
@@ -33,7 +32,6 @@ const Slider = ({ logementData }) => {
         showImages = "loading";
     }
     
-    // Affichages des flèches
     let arrowRight = <img src={flecheRight} alt="fleche next" className="arrow-right" onClick={() => onNextSlide()} />;
     if (logementData.pictures.length === 1) {
         arrowRight = "";

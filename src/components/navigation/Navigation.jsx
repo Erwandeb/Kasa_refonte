@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom"
 function Navigation() {
     return (
         <div className="navigation">
-            <NavLink exact to ="/" activeClassName ="nav-active">
+            <NavLink to ="/" activeclassname="nav-active">
                 Accueil
             </NavLink>
-            <NavLink exact to ="/a-propos" activeClassName ="nav-active">
+            <NavLink to ="/a-propos" activeclassname ="nav-active">
                 A propos
             </NavLink>
         </div>

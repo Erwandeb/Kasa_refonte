@@ -2,11 +2,6 @@ import { useState } from 'react';
 import Accordeon from '../../components/accordeon/Accordeon';
 
 const Logement_dropdown_container = ({ logementData }) => {
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  const displayText = (btn) => {
-    btn.style.display = "block";
-  };
 
   return (
     <div className="wrapper-logement-details">

@@ -17,6 +17,10 @@ function About_dropdown_container() {
     setIsLoaded(true);
   }, []);
 
+  if(!isLoaded) {
+    return <div className='chargement'>Chargement…</div>;
+  }  
+
   return (
     <div className="aboutMainText">
       <div className="wrapper-about">

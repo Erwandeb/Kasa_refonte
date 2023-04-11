@@ -8,6 +8,7 @@ import Slider from '../../components/slider/Slider';
 import InfosLogementContainer from '../../layout/infosLogementContainer/InfosLogmentContainer';
 import LogementDropdownContainer from '../../layout/logementDropdownContainer/LogementDropdownContainer';
 import Footer from '../../components/footer/Footer';
+import NotFound from '../Notfound/NotFound';
 
 // Fonction, images, variables, etc...
 import { getData } from '../../api';
@@ -20,6 +21,7 @@ function LogementDetails(props) {
   const [isLoaded, setIsLoaded] = useState(false);
   const { id } = useParams();
   const navigate = useNavigate();
+
 
   const fetchingData = async () => {
     try {
@@ -44,6 +46,10 @@ function LogementDetails(props) {
   }, [id]);
 
 
+
+  if (!id) {
+    return <NotFound />;
+  }
   if (error) {
     return <div>Erreur !</div>;
   } 
