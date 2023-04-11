@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Kasa_refonte/static/css/main.abc4b954.chunk.css",
-    "main.js": "/Kasa_refonte/static/js/main.707c6929.chunk.js",
-    "main.js.map": "/Kasa_refonte/static/js/main.707c6929.chunk.js.map",
-    "runtime-main.js": "/Kasa_refonte/static/js/runtime-main.bbfe5f7f.js",
-    "runtime-main.js.map": "/Kasa_refonte/static/js/runtime-main.bbfe5f7f.js.map",
-    "static/js/2.287e33fc.chunk.js": "/Kasa_refonte/static/js/2.287e33fc.chunk.js",
-    "static/js/2.287e33fc.chunk.js.map": "/Kasa_refonte/static/js/2.287e33fc.chunk.js.map",
-    "static/js/3.186123de.chunk.js": "/Kasa_refonte/static/js/3.186123de.chunk.js",
-    "static/js/3.186123de.chunk.js.map": "/Kasa_refonte/static/js/3.186123de.chunk.js.map",
-    "index.html": "/Kasa_refonte/index.html",
-    "static/css/main.abc4b954.chunk.css.map": "/Kasa_refonte/static/css/main.abc4b954.chunk.css.map",
-    "static/js/2.287e33fc.chunk.js.LICENSE.txt": "/Kasa_refonte/static/js/2.287e33fc.chunk.js.LICENSE.txt",
-    "static/media/IMG.ac3aa739.png": "/Kasa_refonte/static/media/IMG.ac3aa739.png",
-    "static/media/kalen-emsley-Bkci_8qcdvQ-unsplash.b56a72c0.jpg": "/Kasa_refonte/static/media/kalen-emsley-Bkci_8qcdvQ-unsplash.b56a72c0.jpg",
-    "static/media/logo_kasa.317c49f4.svg": "/Kasa_refonte/static/media/logo_kasa.317c49f4.svg"
+    "main.css": "/static/css/main.abc4b954.chunk.css",
+    "main.js": "/static/js/main.1161e054.chunk.js",
+    "main.js.map": "/static/js/main.1161e054.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4ee6fe39.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4ee6fe39.js.map",
+    "static/js/2.287e33fc.chunk.js": "/static/js/2.287e33fc.chunk.js",
+    "static/js/2.287e33fc.chunk.js.map": "/static/js/2.287e33fc.chunk.js.map",
+    "static/js/3.186123de.chunk.js": "/static/js/3.186123de.chunk.js",
+    "static/js/3.186123de.chunk.js.map": "/static/js/3.186123de.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.abc4b954.chunk.css.map": "/static/css/main.abc4b954.chunk.css.map",
+    "static/js/2.287e33fc.chunk.js.LICENSE.txt": "/static/js/2.287e33fc.chunk.js.LICENSE.txt",
+    "static/media/IMG.ac3aa739.png": "/static/media/IMG.ac3aa739.png",
+    "static/media/kalen-emsley-Bkci_8qcdvQ-unsplash.b56a72c0.jpg": "/static/media/kalen-emsley-Bkci_8qcdvQ-unsplash.b56a72c0.jpg",
+    "static/media/logo_kasa.317c49f4.svg": "/static/media/logo_kasa.317c49f4.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bbfe5f7f.js",
+    "static/js/runtime-main.4ee6fe39.js",
     "static/js/2.287e33fc.chunk.js",
     "static/css/main.abc4b954.chunk.css",
-    "static/js/main.707c6929.chunk.js"
+    "static/js/main.1161e054.chunk.js"
   ]
 }
